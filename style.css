@@ -147,6 +147,7 @@
 /* headline section */
 .headline-container {
   padding: 64px 0;
+  width: 100%;
   /* stylelint-disable declaration-colon-newline-after */
   background-image: url("./assets/headline/background-1.svg"),
     url("./assets/headline/background-2.svg"),
@@ -164,14 +165,10 @@
     0% 19%,
     0% 0%,
     100% 7%,
-    40% 78%,
+    40% 72%,
     100% 95%;
   background-repeat: no-repeat;
   background-size: cover, auto, auto, auto, auto, auto, auto, auto;
-}
-
-.headline-background {
-  display: none;
 }
 
 .headline-content {
@@ -246,20 +243,14 @@
   .headline-container {
     background-image: none;
     padding: 160px 0;
-    margin-bottom: 200px;
+    padding-bottom: 600px;
+    min-height: 100vh;
   }
 
   .headline-background {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    right: 0;
     display: inline-block;
-  }
-
-  .headline-background img {
-    width: 100%;
+    background: no-repeat url(./assets/Header-llustration-desktop.svg);
+    background-size: contain;
   }
 
   .headline-content {
