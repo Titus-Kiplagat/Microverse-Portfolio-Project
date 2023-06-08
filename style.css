@@ -375,20 +375,19 @@ a {
 
 .card-items {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 5.2px;
 }
 
 .card-item {
-  padding: 8px 12px;
   background: var(--color-background);
   border-radius: 4px;
+  padding: 8px 12px;
   font-weight: 600;
-  color: #3a4a42;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 3%;
+  color: #3a4a42;
 }
 
 .card-button {
