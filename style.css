@@ -138,7 +138,8 @@ a {
     url("./assets/headline/background-7.svg"),
     url("./assets/headline/background-8.svg");
   /* stylelint-enable declaration-colon-newline-after */
-  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%, 40% 72%, 100% 95%;
+  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%,
+    40% 72%, 100% 95%;
   background-repeat: no-repeat;
   background-size: cover, auto, auto, auto, auto, auto, auto, auto;
 }
@@ -427,12 +428,8 @@ a {
 
 /* contact section */
 #contact {
-  /* margin-top: 14px; */
-  background-image: url(./assets/illustration-contact-form.svg);
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
+  padding: 20px 0;
 }
-
 .contact-title {
   font-family: var(--font-secondary);
   font-style: normal;
@@ -489,4 +486,28 @@ a {
   line-height: 24px;
   color: var(--color-white);
   text-align: center;
+}
+
+/* footer section */
+.footer {
+    background-image: url(./assets/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin-bottom: 40px;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-email {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 30px 0;
 }
