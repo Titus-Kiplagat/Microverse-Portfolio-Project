@@ -57,6 +57,7 @@ a {
 /* reusable */
 .wrapper {
   margin: 0 27px;
+  height: 100%;
 }
 
 .section-title {
@@ -137,15 +138,7 @@ a {
     url("./assets/headline/background-7.svg"),
     url("./assets/headline/background-8.svg");
   /* stylelint-enable declaration-colon-newline-after */
-  background-position:
-    center center,
-    100% 42%,
-    0% 80%,
-    0% 19%,
-    0% 0%,
-    100% 7%,
-    40% 72%,
-    100% 95%;
+  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%, 40% 72%, 100% 95%;
   background-repeat: no-repeat;
   background-size: cover, auto, auto, auto, auto, auto, auto, auto;
 }
@@ -430,4 +423,92 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+}
+
+/* contact section */
+#contact {
+  padding: 20px 0;
+}
+
+.contact-title {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: var(--color-tertiary);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-name,
+.form-email,
+.form-textarea {
+  background: #fff;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 100%;
+  padding: 15px 16px;
+  margin: 24px auto;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: var(--font-secondary);
+  font-style: italic;
+  color: #6b778c;
+}
+
+.form-textarea {
+  border: 1px solid #60c095;
+  padding: 12px;
+  font-style: normal;
+  color: #42526e;
+}
+
+.form-textarea::placeholder {
+  color: #42526e;
+}
+
+.contact-button {
+  padding: 12px;
+  background: var(--color-secondary);
+  border-radius: 4px;
+  border: none;
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* footer section */
+.footer {
+  background-image: url(./assets/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin-bottom: 2.5rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-email {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526e;
+  margin: 30px 0;
 }
