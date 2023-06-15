@@ -657,6 +657,14 @@ a {
   color: #6b778c;
 }
 
+.form-name::placeholder, .form-email::placeholder, .form-textarea::placeholder {
+  transition: transform .3s ease;
+}
+
+.form-name:hover::placeholder, .form-email:hover::placeholder, .form-textarea:hover::placeholder {
+  transform: translateX(.5rem);
+}
+
 .form-textarea {
   border: 1px solid #60c095;
   padding: 0.75rem;
