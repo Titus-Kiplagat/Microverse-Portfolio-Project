@@ -258,6 +258,8 @@ a {
 
   .headline-content {
     margin-top: -2.5rem;
+    z-index: 1;
+    opacity: 1;
   }
 
   .primary-headline {
@@ -288,10 +290,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  .headline-container {
-    padding-bottom: 37.5rem;
-  }
-
   .headline-content {
     margin-top: 6.25rem;
   }
@@ -309,6 +307,12 @@ a {
 
   .social-icons {
     margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .headline-container {
+    padding-bottom: 20rem;
   }
 }
 
@@ -336,7 +340,7 @@ a {
   bottom: -1.5rem;
   position: absolute;
   border-radius: 1.5rem;
-  background-color: #36b37e;
+  background-color: var(--color-secondary);
 }
 
 .cards-container {
@@ -473,13 +477,13 @@ a {
 .about-text {
   color: #42526e;
   text-align: center;
-  font-size: 1.25;
+  font-size: 1.25rem;
   line-height: 2rem;
 }
 
 .resume-btn {
   padding: 0.75rem;
-  background: #36b37f;
+  background: var(--color-secondary);
   border-radius: 0.25rem;
   width: fit-content;
   outline: none;
@@ -590,7 +594,7 @@ a {
   }
 
   .about-title {
-    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
