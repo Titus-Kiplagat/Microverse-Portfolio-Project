@@ -45,6 +45,14 @@
 ### Key Features <a name="key-features"></a>
 
 - Setup linters and mobile version skeleton
+- Create mobile version
+- Add Contact form
+- Create desktop version
+- Application deploy
+- Evaluate accessibility
+- Add mobile menu
+- Details modal 
+- Validate contact form
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,15 +117,9 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- Create mobile version
-- Add Contact form
-- Create desktop version
-- Application deploy
-- Evaluate accessibility
-- Add mobile menu
-- Details modal 
-- Validate contact form
 - Preserve data in the browser
+- Add dynamic content
+- Add more animation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -166,7 +168,5 @@ I would like to give credit to list of contributors:
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
