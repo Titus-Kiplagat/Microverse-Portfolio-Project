@@ -53,6 +53,7 @@
 - Add mobile menu
 - Details modal 
 - Validate contact form
+- Add more animation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,7 +120,6 @@ Example commands:
 
 - Preserve data in the browser
 - Add dynamic content
-- Add more animation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

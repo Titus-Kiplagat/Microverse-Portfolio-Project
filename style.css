@@ -20,10 +20,6 @@
   padding: 0;
 }
 
-main {
-  overflow-y: scroll;
-}
-
 .img {
   width: 100%;
 }
@@ -58,7 +54,8 @@ a {
 
 /* reusable */
 .wrapper {
-  margin: 0 1.688rem;
+  padding: 0 1.688rem;
+  width: 100%;
   height: 100%;
 }
 
@@ -110,7 +107,7 @@ a {
 
 .menu-open-btn {
   border: none;
-  padding: 0.5rem;
+  padding: 1rem;
   background: var(--color-white);
 }
 
@@ -310,9 +307,9 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1600px) {
   .headline-container {
-    padding-bottom: 20rem;
+    padding-bottom: 30rem;
   }
 }
 
@@ -354,6 +351,12 @@ a {
   background: var(--color-background);
   border: 1px solid #d0d9d4;
   border-radius: 0.5rem;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(54, 179, 127, 0.24);
 }
 
 .card-image {
@@ -510,6 +513,12 @@ a {
   background: var(--color-background);
   border: 1px solid #c1c7d0;
   border-radius: 0.5rem;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+
+.skill-wrapper:hover {
+  box-shadow: 0 0.5rem 1rem rgba(54, 179, 127, 0.24);
 }
 
 .skill-card {
@@ -660,14 +669,26 @@ a {
   color: #6b778c;
 }
 
+.form-name::placeholder,
+.form-email::placeholder,
+.form-textarea::placeholder {
+  transition: transform 0.3s ease;
+}
+
+.form-textarea::placeholder {
+  color: #42526e;
+}
+
+.form-name:hover::placeholder,
+.form-email:hover::placeholder,
+.form-textarea:hover::placeholder {
+  transform: translateX(0.5rem);
+}
+
 .form-textarea {
   border: 1px solid #60c095;
   padding: 0.75rem;
   font-style: normal;
-  color: #42526e;
-}
-
-.form-textarea::placeholder {
   color: #42526e;
 }
 
