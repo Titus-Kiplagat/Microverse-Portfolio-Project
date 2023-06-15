@@ -669,22 +669,26 @@ a {
   color: #6b778c;
 }
 
-.form-name::placeholder, .form-email::placeholder, .form-textarea::placeholder {
-  transition: transform .3s ease;
+.form-name::placeholder,
+.form-email::placeholder,
+.form-textarea::placeholder {
+  transition: transform 0.3s ease;
 }
 
-.form-name:hover::placeholder, .form-email:hover::placeholder, .form-textarea:hover::placeholder {
-  transform: translateX(.5rem);
+.form-textarea::placeholder {
+  color: #42526e;
+}
+
+.form-name:hover::placeholder,
+.form-email:hover::placeholder,
+.form-textarea:hover::placeholder {
+  transform: translateX(0.5rem);
 }
 
 .form-textarea {
   border: 1px solid #60c095;
   padding: 0.75rem;
   font-style: normal;
-  color: #42526e;
-}
-
-.form-textarea::placeholder {
   color: #42526e;
 }
 
