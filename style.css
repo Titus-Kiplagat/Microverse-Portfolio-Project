@@ -382,12 +382,15 @@ a {
 }
 
 .card-items {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  gap: 0.325rem;
+  gap: 0.325rem; */
+  list-style: none;
 }
 
 .card-item {
+  float: left;
+  margin: 2px;
   background: var(--color-background);
   border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
