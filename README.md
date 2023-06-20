@@ -7,6 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
   - [🚀 Demo Screenshot](#screenshot-demo)
 - [💻 Getting Started](#getting-started)
 	- [Prerequisites](#prerequisites)
@@ -58,6 +59,10 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
+- [Project Link](https://titus-kiplagat.github.io/Microverse-Portfolio-Project/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Demo Screenshot <a name="screenshot-demo"></a>
 <img src="./assets/img/demo-screenshot.png" alt="demo screenshot"></img>
@@ -86,6 +91,7 @@ Example commands:
   cd my-folder
   git init #if not initialized git on your folder
   git clone git@github.com:Titus-Kiplagat/Microverse-Portfolio-Project.git
+  cd Microverse-Portfolio-Project
 ```
 
 
