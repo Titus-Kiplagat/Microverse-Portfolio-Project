@@ -314,21 +314,27 @@
               method="POST"
               class="form"
             >
-              <input
-                type="text"
-                name="name"
-                class="form-name"
-                placeholder="Full name"
-                maxlength="30"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                class="form-email"
-                placeholder="Email address"
-                required
-              />
+            <label class="hidden-label" for="name"></label>
+                  <input
+                  type="text"
+                  name="name"
+                  class="form-name"
+                  placeholder="Full name"
+                  maxlength="30"
+                  id="name"
+                  required
+                />
+                <label class="hidden-label" for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-email"
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+              
+            <label class="hidden-label" for="message"></label>
               <textarea
                 name="message"
                 cols="30"
@@ -336,6 +342,7 @@
                 class="form-textarea"
                 placeholder="Hey, I'd like to connect to ..."
                 maxlength="500"
+                id="message"
                 required
               ></textarea>
               <button class="contact-button" type="submit">Get in touch</button>

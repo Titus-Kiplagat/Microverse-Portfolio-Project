@@ -706,6 +706,10 @@ a {
   text-align: center;
 }
 
+.hidden-label {
+  display: none;
+}
+
 /* contact section desktop version */
 @media (min-width: 768px) {
   .contact-background {
