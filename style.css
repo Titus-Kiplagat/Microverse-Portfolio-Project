@@ -356,6 +356,7 @@ a {
 
 .card {
   position: relative;
+  height: 29.625rem;
   background: var(--color-background);
   border: 1px solid #d0d9d4;
   border-radius: 0.5rem;
@@ -373,6 +374,7 @@ a {
 }
 
 .card-content {
+  height: 13.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -422,11 +424,17 @@ a {
   color: var(--color-white);
   outline: none;
   border: none;
+  /* transition: all 0s ease-in-out; */
 }
 
 .card-button:hover {
   background-color: var(--color-white);
   color: #008552;
+  border: 2px solid #008552;
+}
+
+a {
+  color: inherit;
 }
 
 /* work section desktop version */
