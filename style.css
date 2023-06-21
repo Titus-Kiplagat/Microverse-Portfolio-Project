@@ -25,23 +25,34 @@
 }
 
 a {
-  color: var(--color-white);
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
 }
 
 /* buttons */
-.btn-hover {
+.navbar-btn {
   border: none;
-  transition: all 0.5s ease-in-out;
+  transition: all ease-in-out;
 }
 
-.btn-hover:hover {
-  box-shadow: 0 0.5rem 1rem rgba(54, 179, 127, 0.24);
-  background: var(--color-secondary);
+.navbar-btn:hover {
+  box-shadow: 0 0.5rem 1rem var(--color-tertiary);
+  background: var(--color-tertiary);
+  color: var(--color-white);
   border-radius: 0.25rem;
 }
 
-.btn-hover:active {
-  background: #008552;
+.navbar-btn:focus {
+  outline: none;
+}
+
+.navbar-btn:active {
+  background: var(--color-white);
+  outline: 2px solid var(--color-tertiary);
+  color: var(--color-tertiary);
 }
 
 .btn-zoom {
@@ -348,6 +359,7 @@ a {
 
 .card {
   position: relative;
+  height: 29.625rem;
   background: var(--color-background);
   border: 1px solid #d0d9d4;
   border-radius: 0.5rem;
@@ -365,6 +377,7 @@ a {
 }
 
 .card-content {
+  height: 13.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -405,13 +418,21 @@ a {
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   margin-top: 0.813rem;
-  background: var(--color-secondary);
+  background: #008552;
   border-radius: 0.25rem;
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 3%;
   color: var(--color-white);
+  outline: none;
+  border: none;
+}
+
+.card-button:hover {
+  background-color: var(--color-white);
+  color: #008552;
+  border: 2px solid #008552;
 }
 
 /* work section desktop version */
@@ -486,7 +507,7 @@ a {
 
 .resume-btn {
   padding: 0.75rem;
-  background: var(--color-secondary);
+  background: #008552;
   border-radius: 0.25rem;
   width: fit-content;
   outline: none;
@@ -500,6 +521,10 @@ a {
   letter-spacing: 3%;
   color: var(--color-white);
   margin: 0 auto;
+}
+
+.resume-btn:focus {
+  outline: 2px solid #008552;
 }
 
 .skills-container {
@@ -704,6 +729,10 @@ a {
   line-height: 1.5rem;
   color: var(--color-white);
   text-align: center;
+}
+
+.hidden-label {
+  display: none;
 }
 
 /* contact section desktop version */
