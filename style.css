@@ -53,7 +53,6 @@ a:focus {
   background: var(--color-white);
   outline: 2px solid var(--color-tertiary);
   color: var(--color-tertiary);
-  /* outline: none; */
 }
 
 .btn-zoom {
@@ -428,7 +427,6 @@ a:focus {
   color: var(--color-white);
   outline: none;
   border: none;
-  /* transition: all 0s ease-in-out; */
 }
 
 .card-button:hover {
