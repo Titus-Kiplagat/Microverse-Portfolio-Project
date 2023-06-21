@@ -28,6 +28,10 @@ a {
   color: inherit;
 }
 
+a:focus {
+  outline: none;
+}
+
 /* buttons */
 .navbar-btn {
   border: none;
