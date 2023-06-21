@@ -505,7 +505,7 @@ a {
 
 .resume-btn {
   padding: 0.75rem;
-  background: var(--color-secondary);
+  background: #008552;
   border-radius: 0.25rem;
   width: fit-content;
   outline: none;
