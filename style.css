@@ -25,7 +25,7 @@
 }
 
 a {
-  color: var(--color-white);
+  color: inherit;
 }
 
 /* buttons */
@@ -431,10 +431,6 @@ a {
   background-color: var(--color-white);
   color: #008552;
   border: 2px solid #008552;
-}
-
-a {
-  color: inherit;
 }
 
 /* work section desktop version */
