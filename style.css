@@ -525,6 +525,10 @@ a:focus {
   margin: 0 auto;
 }
 
+.resume-btn:focus {
+  outline: 2px solid #008552;
+}
+
 .skills-container {
   display: flex;
   flex-direction: column;
