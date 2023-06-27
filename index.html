@@ -11,29 +11,29 @@
 
   <body>
     <header class="header-container">
-        <div class="header-wrapper">
-          <nav class="navbar">
-            <div class="navbar-header">
-              <button class="menu-close-btn">
-                <img src="./assets/Icon-Cancel.svg" alt="cancel icon" />
-              </button>
-              <ul class="navbar-list">
-                <li class="navbar-item">
-                  <a class="navbar-btn" href="#work">Portoflio</a>
-                </li>
-                <li class="navbar-item">
-                  <a class="navbar-btn" href="#about-me">About</a>
-                </li>
-                <li class="navbar-item">
-                  <a class="navbar-btn" href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <button class="menu-open-btn">
-              <img src="./assets/Union.svg" alt="hamburger icon" />
+      <div class="header-wrapper">
+        <button class="menu-open-btn">
+          <img src="./assets/Union.svg" alt="hamburger icon" />
+        </button>
+        <nav class="mobile-navbar">
+          <div class="navbar-header">
+            <button class="menu-close-btn">
+              <img src="./assets/Icon-Cancel.svg" alt="cancel icon" />
             </button>
-          </nav>
-        </div>
+            <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="navbar-btn" href="#work">Portoflio</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-btn" href="#about-me">About</a>
+              </li>
+              <li class="navbar-item">
+                <a class="navbar-btn" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="headline-container headline-background">
@@ -46,8 +46,8 @@
             </h1>
             <p class="text-headline">
               <span
-                >I can help you build a product, feature or website Look
-                through some of my work and</span
+                >I can help you build a product, feature or website Look through
+                some of my work and</span
               ><span
                 >experience! If you like what you see and have a project you
                 need coded,</span
@@ -312,27 +312,27 @@
               method="POST"
               class="form"
             >
-            <label class="hidden-label" for="name"></label>
-                  <input
-                  type="text"
-                  name="name"
-                  class="form-name"
-                  placeholder="Full name"
-                  maxlength="30"
-                  id="name"
-                  required
-                />
-                <label class="hidden-label" for="email"></label>
-                <input
-                  type="email"
-                  name="email"
-                  class="form-email"
-                  placeholder="Email address"
-                  id="email"
-                  required
-                />
-              
-            <label class="hidden-label" for="message"></label>
+              <label class="hidden-label" for="name"></label>
+              <input
+                type="text"
+                name="name"
+                class="form-name"
+                placeholder="Full name"
+                maxlength="30"
+                id="name"
+                required
+              />
+              <label class="hidden-label" for="email"></label>
+              <input
+                type="email"
+                name="email"
+                class="form-email"
+                placeholder="Email address"
+                id="email"
+                required
+              />
+
+              <label class="hidden-label" for="message"></label>
               <textarea
                 name="message"
                 cols="30"
