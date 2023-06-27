@@ -165,10 +165,25 @@ a:focus {
     align-items: center;
   }
 
+  .desktop-navbar {
+    display: flex;
+  }
+
+  .mobile-navbar, .menu-open-btn {
+    display: none;
+  }
+
   .navbar-list {
     display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 0 auto;
+  }
+
+  .navbar-item {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
   .navbar-item a {
@@ -179,10 +194,6 @@ a:focus {
     line-height: 1.25rem;
     padding: 0.75rem;
     margin: 0 0.625rem;
-  }
-
-  .menu-open-btn {
-    display: none;
   }
 }
 
