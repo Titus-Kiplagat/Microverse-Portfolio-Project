@@ -129,7 +129,7 @@ a:focus {
   padding: 0.5rem 0.25rem;
 }
 
-.menu-close-btn {
+.menu-close-btn, .menu-open-btn {
   border: none;
   padding: 1rem;
   font-size: 1.5rem;
@@ -143,13 +143,13 @@ a:focus {
   transition: all 0.2s ease-in-out;
 }
 
-.menu-close-btn:hover {
+.menu-close-btn:hover .menu-open-btn:hover {
   box-shadow: 0 0.5rem 1rem var(--color-tertiary);
   background: var(--color-white);
   border-radius: 0.25rem;
 }
 
-.menu-close-btn:focus {
+.menu-close-btn:focus, .menu-open-btn:focus {
   outline: none;
 }
 
@@ -170,7 +170,7 @@ a:focus {
   }
 
   .mobile-navbar, .menu-open-btn {
-    display: none;
+    display: none !important;
   }
 
   .navbar-list {
