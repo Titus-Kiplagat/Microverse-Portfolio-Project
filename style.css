@@ -86,7 +86,7 @@ a:focus {
   background-color: var(--color-white);
 }
 
-.mobile-navbar .desktop-navbar {
+.mobile-navbar, .desktop-navbar {
   width: 100%;
   display: none;
 }
@@ -143,7 +143,7 @@ a:focus {
   transition: all 0.2s ease-in-out;
 }
 
-.menu-close-btn:hover .menu-open-btn:hover {
+.menu-close-btn:hover, .menu-open-btn:hover {
   box-shadow: 0 0.5rem 1rem var(--color-tertiary);
   background: var(--color-white);
   border-radius: 0.25rem;
