@@ -86,11 +86,13 @@ a:focus {
   background-color: var(--color-white);
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  justify-content: flex-end;
+.mobile-navbar .desktop-navbar {
+  width: 100%;
+  display: none;
+}
+
+.mobile-navbar .navbar-list {
+  margin-top: 4rem;
 }
 
 .navbar-header {
@@ -102,7 +104,6 @@ a:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
   flex-direction: column;
 }
 
@@ -114,25 +115,42 @@ a:focus {
   line-height: 2.75rem;
   color: #3a4a42;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
-.menu-open-btn {
-  border: none;
-  padding: 1rem;
-  background: var(--color-white);
+.navbar-item {
+  margin: 0 1.75rem;
+}
+
+.navbar-list a {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
 }
 
 .menu-close-btn {
-  position: relative;
-  align-self: flex-end;
-  width: max-content;
-  margin-right: 1.5rem;
-  padding: 0.5rem;
-  margin-top: 0.125rem;
-  height: 2.75rem;
   border: none;
-  background-color: var(--color-white);
-  display: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  background: var(--color-white);
+  float: right;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-close-btn:hover {
+  box-shadow: 0 0.5rem 1rem var(--color-tertiary);
+  background: var(--color-white);
+  border-radius: 0.25rem;
+}
+
+.menu-close-btn:focus {
+  outline: none;
 }
 
 /* header desktop version */
@@ -182,7 +200,8 @@ a:focus {
     url("./assets/headline/background-7.svg"),
     url("./assets/headline/background-8.svg");
   /* stylelint-enable declaration-colon-newline-after */
-  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%, 40% 72%, 100% 95%;
+  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%,
+    40% 72%, 100% 95%;
   background-repeat: no-repeat;
   background-size: cover, auto, auto, auto, auto, auto, auto, auto;
 }
