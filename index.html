@@ -51,8 +51,11 @@
     </header> -->
     <div class="modal">
       <div class="modal-content">
-        <button class="close">
+        <button class="close-mobile">
           <img src="./assets/Icon - Cancel.svg" alt="modal close button" />
+        </button>
+        <button class="close-desktop">
+          <img src="./assets/Icon - Cancel-Desktop.svg" alt="modal close button" />
         </button>
         <div class="project-details">
           <div class="project-image">
@@ -62,16 +65,28 @@
             />
           </div>
           <div class="project-info">
+            <div class="project-title-wrapper">
             <h3 class="project-title">
               Keeping track of hundreds of components
             </h3>
-            <ul class="project-tags card-items">
+            <div class="button-container-desktop">
+              <button class="btn">
+                <a href="#" class="btn-live">See live </a>
+                <img src="./assets/see_live_icon.svg" alt="see live icon" />
+              </button>
+              <button class="btn">
+                <a href="#" class="btn-source">See source</a>
+                <img src="./assets/github_white.svg" alt="See Source Icon" />
+              </button>
+            </div>
+            </div>
+            <ul class="card-items project-tags">
               <li class="tag card-item">Ruby on Rails</li>
               <li class="tag card-item">CSS</li>
               <li class="tag card-item">JavaScript</li>
               <li class="tag card-item">HTML</li>
             </ul>
-            <p class="project-description">
+            <div class="project-description">
               <p class="paragraph-desc">
                 lorem ipsum is simply dummy text of the printing and typesetting
                 industry. lorem ipsum has been the industry's standard dummy text
@@ -84,7 +99,7 @@
                 ever since the 1500s, when an unknown printer took a galley of
                 type and scrambled it 1960s.
               </p>
-            </p>
+            </div>
             <div class="button-container">
               <button class="btn">
                 <a href="#" class="btn-live">See live </a>
