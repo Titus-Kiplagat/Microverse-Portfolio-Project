@@ -218,15 +218,8 @@ a:focus {
   /* stylelint-enable declaration-colon-newline-after */
 
   /* stylint-disable */
-  background-position:
-    center center,
-    100% 42%,
-    0% 80%,
-    0% 19%,
-    0% 0%,
-    100% 7%,
-    40% 72%,
-    100% 95%;
+  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%,
+    40% 72%, 100% 95%;
 
   /* stylint-enable */
   background-repeat: no-repeat;
@@ -889,4 +882,119 @@ a:focus {
     background: none;
     margin: 0;
   }
+}
+
+/* modal */
+.modal {
+  background: #c1c7d0;
+  height: 100%;
+  padding: 1.25rem 1rem 1.625rem 1rem;
+}
+.modal-content {
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 21.438rem;
+  position: relative;
+  background: white;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin: 8px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  display: flex;
+  padding: 8px;
+  align-items: flex-start;
+}
+
+.close img {
+  width: 40px;
+  height: 40px;
+}
+
+.project-details {
+  max-width: 21.438rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.project-image {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 13.75rem;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+.project-title {
+  width: 259px;
+  height: 135px;
+  color: #172b4d;
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.paragraph-desc {
+  color: #344563;
+  font-size: 16px;
+  font-family: Inter;
+  line-height: 24px;
+}
+
+.button-container {
+  display: flex;
+  gap: 18px;
+}
+
+.btn {
+  display: flex;
+  /* flex-basis: 100%; */
+  gap: 12px;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  color: white;
+  background: #008552;
+  width: max-content;
+}
+
+.btn:nth-child(2) {
+  padding: 12px;
+}
+
+.btn-live,
+.btn-source {
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.51px;
+}
+
+.btn img {
+  height: 24px;
+  width: 24px;
 }
