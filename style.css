@@ -888,37 +888,40 @@ a:focus {
 .modal {
   background: #c1c7d0;
   height: 100%;
+  width: 100%;
   padding: 1.25rem 1rem 1.625rem 1rem;
 }
 .modal-content {
   padding: 1rem;
-  border-radius: 8px;
-  max-width: 21.438rem;
-  position: relative;
-  background: white;
+  border-radius: 0.5rem;
+  background: var(--color-white);
   position: relative;
 }
 
-.close {
+.close-mobile {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  margin: 8px;
-  border-radius: 8px;
+  top: 1rem;
+  right: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
   border: none;
-  color: white;
+  color: var(--color-white);
   display: flex;
-  padding: 8px;
+  padding: 0.5rem;
   align-items: flex-start;
+  z-index: 2;
 }
 
-.close img {
-  width: 40px;
-  height: 40px;
+.close-mobile img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.close-desktop {
+  display: none;
 }
 
 .project-details {
-  max-width: 21.438rem;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -936,7 +939,8 @@ a:focus {
   width: 100%;
   height: 13.75rem;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0.5rem;
+  position: relative;
 }
 
 .project-image img {
@@ -945,56 +949,163 @@ a:focus {
 }
 
 .project-title {
-  width: 259px;
-  height: 135px;
   color: #172b4d;
-  font-size: 32px;
-  font-family: Inter;
+  font-size: 2rem;
+  font-family: var(--font-secondary);
   font-weight: 600;
-  line-height: 44px;
+  line-height: 2.75rem;
 }
 
 .paragraph-desc {
   color: #344563;
-  font-size: 16px;
-  font-family: Inter;
-  line-height: 24px;
+  font-size: 1rem;
+  font-family: var(--font-secondary);
+  line-height: 1.5rem;
+}
+
+.button-container-desktop {
+  display: none;
 }
 
 .button-container {
   display: flex;
-  gap: 18px;
+  gap: 1.125rem;
 }
 
 .btn {
   display: flex;
-  /* flex-basis: 100%; */
-  gap: 12px;
-  padding: 12px 16px;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
   border: none;
   outline: none;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   color: white;
   background: #008552;
-  width: max-content;
+  width: fit-content;
 }
 
 .btn:nth-child(2) {
-  padding: 12px;
+  padding: 0.75rem;
 }
 
 .btn-live,
 .btn-source {
-  color: #fff;
+  color: var(--color-white);
   text-align: center;
-  font-size: 17px;
-  font-family: Inter;
+  font-size: 1.063rem;
+  font-family: var(--font-secondary);
   font-weight: 500;
-  line-height: 24px;
+  line-height: 1.5rem;
   letter-spacing: 0.51px;
 }
 
 .btn img {
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* modal desktop version */
+@media screen and (min-width: 768px) {
+  .modal-content {
+    width: 57.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-white);
+    box-shadow: 0rem 3rem 3rem 0rem rgba(37, 47, 137, 0.08);
+    margin: auto;
+    padding: 0;
+  }
+
+  .close-mobile {
+    display: none;
+  }
+
+  .project-details {
+    gap: 0;
+  }
+
+  .close-desktop {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    padding: 0.5rem;
+    align-items: flex-start;
+    z-index: 2;
+    background: #ebecf0;
+  }
+
+  .close-desktop img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .project-image {
+    max-width: 54.5rem;
+    height: 38.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4.875rem;
+  }
+
+  .project-image img {
+    width: 100%;
+    border: none;
+  }
+  .project-info {
+    gap: 0;
+  }
+
+  .project-title-wrapper {
+    display: flex;
+    margin: 1.5rem 1.688rem 1.25rem 1.625rem;
+  }
+
+  .button-container {
+    display: none;
+  }
+
+  .button-container-desktop {
+    display: flex;
+  }
+
+  .button-container-desktop .btn {
+    height: 3rem;
+    padding: 0.75rem;
+  }
+  .button-container-desktop .btn:nth-child(1) {
+    margin: 0 0.75rem;
+  }
+  .project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 1.5rem;
+  }
+  .tag {
+    display: flex;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    border-radius: 0.5rem;
+    background: #ebecf0;
+    color: #344563;
+    font-size: 0.75rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    line-height: 1rem;
+    letter-spacing: 0.36px;
+  }
+  .project-description {
+    margin: 2.25rem 1.25rem 2.75rem 1.5rem;
+  }
+  .project-description,
+  .paragraph-desc {
+    color:  #344563;
+    font-size: 1rem;
+    font-family: var(--font-secondary);
+    line-height: 1.875rem;
+  }
 }
