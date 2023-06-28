@@ -404,8 +404,11 @@ a:focus {
 }
 
 .card {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 29.625rem;
+  width: 100%;
+  max-width: 23.0625;
   background: var(--color-background);
   border: 1px solid #d0d9d4;
   border-radius: 0.5rem;
@@ -418,12 +421,23 @@ a:focus {
 }
 
 .card-image {
-  height: 15.75rem;
-  width: 6.25rem;
+  position: relative;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
-  height: 13.875rem;
+  max-height: 13.875rem;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
