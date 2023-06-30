@@ -218,8 +218,15 @@ a:focus {
   /* stylelint-enable declaration-colon-newline-after */
 
   /* stylint-disable */
-  background-position: center center, 100% 42%, 0% 80%, 0% 19%, 0% 0%, 100% 7%,
-    40% 72%, 100% 95%;
+  background-position:
+    center center,
+    100% 42%,
+    0% 80%,
+    0% 19%,
+    0% 0%,
+    100% 7%,
+    40% 72%,
+    100% 95%;
 
   /* stylint-enable */
   background-repeat: no-repeat;
@@ -401,7 +408,7 @@ a:focus {
   flex-direction: column;
   height: 29.625rem;
   width: 100%;
-  max-width: 23.0625;
+  max-width: 23.0625rem;
   background: var(--color-background);
   border: 1px solid #d0d9d4;
   border-radius: 0.5rem;
@@ -901,9 +908,11 @@ a:focus {
   background: var(--color-white);
   position: relative;
 }
+
 .mobile-content.show {
   display: block;
 }
+
 .close-mobile {
   position: absolute;
   top: 1rem;
@@ -942,6 +951,11 @@ a:focus {
 
 .project-info > ul:nth-child(3) {
   display: none;
+}
+
+.btn img {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .project-image {
@@ -1019,18 +1033,13 @@ a:focus {
   letter-spacing: 0.51px;
 }
 
-.btn img {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
 /* modal desktop version */
 @media screen and (min-width: 768px) {
   .modal-content {
     width: 57.5rem;
     border-radius: 0.5rem;
     background: var(--color-white);
-    box-shadow: 0rem 3rem 3rem 0rem rgba(37, 47, 137, 0.08);
+    box-shadow: 0 3rem 3rem 0 rgba(37, 47, 137, 0.08);
     margin: auto;
     padding: 0;
   }
@@ -1076,18 +1085,23 @@ a:focus {
     width: 100%;
     border: none;
   }
+
   .project-image img:nth-child(1) {
     display: block;
   }
+
   .project-image img:nth-child(2) {
     display: none;
   }
+
   .project-info {
     gap: 0;
   }
+
   .project-info > ul:nth-child(2) {
     display: none;
   }
+
   .project-info > ul:nth-child(3) {
     display: flex;
   }
@@ -1111,9 +1125,11 @@ a:focus {
     height: 3rem;
     padding: 0.75rem;
   }
+
   .button-container-desktop .btn:nth-child(1) {
     margin: 0 0.75rem;
   }
+
   .project-tags {
     display: flex;
     gap: 0.5rem;
@@ -1133,9 +1149,11 @@ a:focus {
     line-height: 1rem;
     letter-spacing: 0.36px;
   }
+
   .project-description {
     margin: 2.25rem 1.25rem 2.75rem 1.5rem;
   }
+
   .project-description,
   .paragraph-desc {
     color: #344563;
@@ -1145,7 +1163,7 @@ a:focus {
   }
 
   .paragraph-desc:first-child {
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 }
 
