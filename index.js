@@ -21,6 +21,8 @@ navbarBtns.forEach((btn) => {
   });
 });
 
+// WORK SECTION PROJECTS ARRAY
+
 const projectList = [
   {
     id: 1,
