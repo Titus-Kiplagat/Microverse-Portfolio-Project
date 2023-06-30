@@ -480,3 +480,31 @@ form.addEventListener('input', debounce((e) => {
     // do nothing
   }
 }));
+
+// data preservation
+const userMessage = document.getElementById('message');
+const userName = document.getElementById('name');
+
+const contactInfo = {
+  fullName: String,
+  email: String,
+  message: String,
+};
+
+form.addEventListener('input', () => {
+  contactInfo.message = userMessage.value;
+  contactInfo.email = email.value;
+  contactInfo.fullName = userName.value;
+
+  localStorage.setItem('contactInfo', JSON.stringify(contactInfo));
+});
+
+window.onload = () => {
+  const information = JSON.parse(localStorage.getItem('contactInfo'));
+
+  if (information) {
+    userName.value = information.fullName;
+    email.value = information.email;
+    userMessage.value = information.message;
+  }
+};
