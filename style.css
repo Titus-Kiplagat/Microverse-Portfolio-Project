@@ -887,17 +887,23 @@ a:focus {
 /* modal */
 .modal {
   background: #c1c7d0;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   padding: 1.25rem 1rem 1.625rem 1rem;
+  overflow: scroll;
+  position: fixed;
+  z-index: 2;
 }
+
 .modal-content {
   padding: 1rem;
   border-radius: 0.5rem;
   background: var(--color-white);
   position: relative;
 }
-
+.mobile-content.show {
+  display: block;
+}
 .close-mobile {
   position: absolute;
   top: 1rem;
@@ -906,10 +912,11 @@ a:focus {
   border-radius: 0.5rem;
   border: none;
   color: var(--color-white);
+  background: transparent;
   display: flex;
   padding: 0.5rem;
   align-items: flex-start;
-  z-index: 2;
+  z-index: 3;
 }
 
 .close-mobile img {
@@ -933,6 +940,10 @@ a:focus {
   gap: 0.75rem;
 }
 
+.project-info > ul:nth-child(3) {
+  display: none;
+}
+
 .project-image {
   display: flex;
   align-items: flex-start;
@@ -948,12 +959,17 @@ a:focus {
   height: auto;
 }
 
+.project-image img:nth-child(1) {
+  display: none;
+}
+
 .project-title {
   color: #172b4d;
   font-size: 2rem;
   font-family: var(--font-secondary);
   font-weight: 600;
   line-height: 2.75rem;
+  position: relative;
 }
 
 .paragraph-desc {
@@ -961,6 +977,10 @@ a:focus {
   font-size: 1rem;
   font-family: var(--font-secondary);
   line-height: 1.5rem;
+}
+
+.paragraph-desc:first-child {
+  margin-bottom: 1rem;
 }
 
 .button-container-desktop {
@@ -981,7 +1001,7 @@ a:focus {
   border-radius: 0.25rem;
   color: white;
   background: #008552;
-  width: fit-content;
+  width: max-content;
 }
 
 .btn:nth-child(2) {
@@ -1056,13 +1076,27 @@ a:focus {
     width: 100%;
     border: none;
   }
+  .project-image img:nth-child(1) {
+    display: block;
+  }
+  .project-image img:nth-child(2) {
+    display: none;
+  }
   .project-info {
     gap: 0;
+  }
+  .project-info > ul:nth-child(2) {
+    display: none;
+  }
+  .project-info > ul:nth-child(3) {
+    display: flex;
   }
 
   .project-title-wrapper {
     display: flex;
+    justify-content: space-between;
     margin: 1.5rem 1.688rem 1.25rem 1.625rem;
+    position: relative;
   }
 
   .button-container {
@@ -1085,6 +1119,7 @@ a:focus {
     gap: 0.5rem;
     margin-left: 1.5rem;
   }
+
   .tag {
     display: flex;
     padding: 0.5rem 0.75rem;
@@ -1103,9 +1138,17 @@ a:focus {
   }
   .project-description,
   .paragraph-desc {
-    color:  #344563;
+    color: #344563;
     font-size: 1rem;
     font-family: var(--font-secondary);
     line-height: 1.875rem;
   }
+
+  .paragraph-desc:first-child {
+    margin-bottom: 0rem;
+  }
+}
+
+.modal-sample {
+  display: none;
 }
