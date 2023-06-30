@@ -30,10 +30,20 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
@@ -46,10 +56,20 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
@@ -62,10 +82,20 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
@@ -78,10 +108,20 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
@@ -94,10 +134,20 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
@@ -110,17 +160,26 @@ const projectList = [
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
     title: 'Multi-Post Stories Gain+Glory',
     projectTitle: 'Keeping track of hundreds of components',
-    desc: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s"],
+    desc: [
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+    ],
     tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
     mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
-    desktopTags: ['Codekit', 'GitHub', 'Javascript', 'Boostrap', 'Terminal', 'Codepen'],
+    desktopTags: [
+      'Codekit',
+      'GitHub',
+      'Javascript',
+      'Boostrap',
+      'Terminal',
+      'Codepen',
+    ],
     imageUrl: './assets/img/Img Plaholder.svg',
     modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
     modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
     live: 'https://titus-kiplagat.github.io/Microverse-Portfolio-Project/',
     source: 'https://github.com/Titus-Kiplagat/Microverse-Portfolio-Project',
   },
-
 ];
 
 const createCard = (project) => {
@@ -237,8 +296,16 @@ const createModal = (project) => {
 
   const buttonContainerDesktop = document.createElement('div');
   buttonContainerDesktop.className = 'button-container-desktop';
-  const liveButtonDesktop = createButtonWithIcon('btn-live', 'See live', './assets/see_live_icon.svg');
-  const sourceButtonDesktop = createButtonWithIcon('btn-source', 'See source', './assets/github_white.svg');
+  const liveButtonDesktop = createButtonWithIcon(
+    'btn-live',
+    'See live',
+    './assets/see_live_icon.svg',
+  );
+  const sourceButtonDesktop = createButtonWithIcon(
+    'btn-source',
+    'See source',
+    './assets/github_white.svg',
+  );
   buttonContainerDesktop.appendChild(liveButtonDesktop);
   buttonContainerDesktop.appendChild(sourceButtonDesktop);
   projectTitleWrapper.appendChild(projectTitle);
@@ -273,8 +340,16 @@ const createModal = (project) => {
 
   const buttonContainer = document.createElement('div');
   buttonContainer.className = 'button-container';
-  const liveButton = createButtonWithIcon('btn-live', 'See live', './assets/see_live_icon.svg');
-  const sourceButton = createButtonWithIcon('btn-source', 'See source', './assets/github_white.svg');
+  const liveButton = createButtonWithIcon(
+    'btn-live',
+    'See live',
+    './assets/see_live_icon.svg',
+  );
+  const sourceButton = createButtonWithIcon(
+    'btn-source',
+    'See source',
+    './assets/github_white.svg',
+  );
   buttonContainer.appendChild(liveButton);
   buttonContainer.appendChild(sourceButton);
 
@@ -327,3 +402,83 @@ cardButtons.forEach((cardButton, index) => {
     displayModal(projectList[index].id);
   });
 });
+
+// validate form
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+
+const isRequired = (value) => value !== '';
+const isLowerCase = (email) => email === email.toLowerCase();
+
+const showErrorMessage = (message) => {
+  // get the form-field element
+  const inputField = document.querySelector('.input-content');
+  // add the error class
+  inputField.classList.remove('success');
+  inputField.classList.add('error');
+
+  // show the error message
+  const error = document.querySelector('#error-message');
+  error.textContent = message;
+};
+
+const showSuccessMessage = () => {
+  // get the form-field element
+  const inputField = document.querySelector('.input-content');
+
+  // remove the error class
+  inputField.classList.remove('error');
+  inputField.classList.add('success');
+
+  // hide the error message
+  const error = document.querySelector('.error-message');
+  error.textContent = '';
+};
+
+const validateEmail = () => {
+  let validate = false;
+  const emailInput = email.value.trim();
+  if (!isRequired(emailInput)) {
+    showErrorMessage('Email cannot be blank.');
+  } else if (!isLowerCase(emailInput)) {
+    showErrorMessage('Email should be in Lower Case characters.');
+  } else {
+    showSuccessMessage();
+    validate = true;
+  }
+  return validate;
+};
+
+form.addEventListener('submit', (event) => {
+  // prevent the form from submitting
+  // validate fields
+  const isEmailValid = validateEmail();
+
+  const isFormValid = isEmailValid;
+
+  if (!isFormValid) {
+    event.preventDefault();
+  }
+});
+
+const debounce = (fn, delay = 500) => {
+  let timeoutId;
+  return (...args) => {
+    // cancel the previous timer
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+    // setup a new timer
+    timeoutId = setTimeout(() => { fn(...args); }, delay);
+  };
+};
+
+form.addEventListener('input', debounce((e) => {
+  switch (e.target.id) {
+    case 'email':
+      validateEmail();
+      break;
+    default:
+    // do nothing
+  }
+}));

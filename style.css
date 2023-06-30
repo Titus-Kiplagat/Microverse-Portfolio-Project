@@ -752,6 +752,7 @@ a:focus {
   font-family: var(--font-secondary);
   font-style: italic;
   color: #6b778c;
+  outline: none;
 }
 
 .form-name::placeholder,
@@ -1033,6 +1034,26 @@ a:focus {
   letter-spacing: 0.51px;
 }
 
+.input-content {
+  width: 100%;
+}
+
+.input-content.error input {
+  border-color: #dc3545;
+  color: red;
+}
+
+.input-content.success input {
+  border-color: #60c095;
+  color: #008552;
+}
+
+.error-message {
+  width: 100%;
+  padding: 0.75rem;
+  color: #dc3545;
+}
+
 /* modal desktop version */
 @media screen and (min-width: 768px) {
   .modal-content {
@@ -1165,8 +1186,4 @@ a:focus {
   .paragraph-desc:first-child {
     margin-bottom: 0;
   }
-}
-
-.modal-sample {
-  display: none;
 }
