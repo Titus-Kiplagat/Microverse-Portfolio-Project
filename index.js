@@ -467,9 +467,7 @@ const debounce = (fn, delay = 500) => {
       clearTimeout(timeoutId);
     }
     // setup a new timer
-    timeoutId = setTimeout(() => {
-      fn.apply(null, args);
-    }, delay);
+    timeoutId = setTimeout(() => { fn(...args); }, delay);
   };
 };
 
