@@ -235,6 +235,7 @@
               action="https://formspree.io/f/mrgvnpyb"
               method="POST"
               class="form"
+              id="form"
             >
               <label class="hidden-label" for="name"></label>
               <input
@@ -247,14 +248,18 @@
                 required
               />
               <label class="hidden-label" for="email"></label>
-              <input
-                type="email"
-                name="email"
-                class="form-email"
-                placeholder="Email address"
-                id="email"
-                required
-              />
+              <div class="input-content">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-email"
+                  placeholder="Email address"
+                  id="email"
+                  aria-describedby="error-message"
+                  required
+                />
+                <small role="alert" id="error-message" class="error-message"></small>
+              </div>
 
               <label class="hidden-label" for="message"></label>
               <textarea
