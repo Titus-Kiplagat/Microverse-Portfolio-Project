@@ -1040,10 +1040,12 @@ a:focus {
 
 .input-content.error input {
   border-color: #dc3545;
+  color: red;
 }
 
-.input-content.success, input {
-  border-color: #28a745;
+.input-content.success input {
+  border-color: #60c095;
+  color: #008552;
 }
 
 .error-message {
@@ -1051,16 +1053,6 @@ a:focus {
   padding: 0.75rem;
   color: #dc3545;
 }
-
-/* .error-message {
-  border-color: red;
-  color: red;
-}
-
-.success-message {
-  border-color: #60c095;
-  color: #008552;
-} */
 
 /* modal desktop version */
 @media screen and (min-width: 768px) {
