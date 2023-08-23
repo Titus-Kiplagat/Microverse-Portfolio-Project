@@ -28,27 +28,25 @@ const projectList = [
     id: 1,
     mobileCloseIconPath: './assets/Icon - Cancel.svg',
     desktopCloseIconPath: './assets/Icon - Cancel-Desktop.svg',
-    title: 'Multi-Post Stories Gain+Glory',
-    projectTitle: 'Keeping track of hundreds of components',
+    title: 'To-Do List App',
+    projectTitle: 'Streamlining Daily Tasks with Our To-Do List Application',
     desc: [
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s",
+      'This To-Do List App is designed to simplify your daily life by helping you stay organized and focused. It provides an intuitive platform to manage your tasks efficiently, ensuring nothing important slips through the cracks.',
+      "With features like task prioritization, due dates, and customizable lists, you can tailor your to-do lists to your unique needs. Whether it's work-related projects or personal errands, our app has you covered.",
     ],
-    tags: ['Ruby on Rails', 'CSS', 'Javascript', 'HTML'],
-    mobileTags: ['Ruby on Rails', 'CSS', 'Javascript'],
+    tags: ['Javascript', 'HTML', 'CSS'],
+    mobileTags: ['Javacript', 'HTML', 'CSS'],
     desktopTags: [
-      'Codekit',
+      'HTML',
       'GitHub',
       'Javascript',
-      'Boostrap',
-      'Terminal',
-      'Codepen',
+      'CSS',
     ],
-    imageUrl: './assets/img/Img Plaholder.svg',
-    modalDesktopImageUrl: './assets/Snapshoot Portfolio.svg',
-    modalMobileImageUrl: './assets/Snapshoot Portfolio (1).svg',
-    live: 'https://titus-kiplagat.github.io/Microverse-Portfolio-Project/',
-    source: 'https://github.com/Titus-Kiplagat/Microverse-Portfolio-Project',
+    imageUrl: './assets/img/taskade-sreenshot.jpg',
+    modalDesktopImageUrl: './assets/img/taskade-sreenshot.jpg',
+    modalMobileImageUrl: './assets/img/taskade-sreenshot.jpg',
+    live: 'https://titus-kiplagat.github.io/Taskade/',
+    source: 'https://github.com/Titus-Kiplagat/Taskade',
   },
   {
     id: 2,
@@ -236,10 +234,12 @@ projectList.forEach((project) => {
   cardsContainer.appendChild(fragment);
 });
 
-const createButtonWithIcon = (className, text, iconPath) => {
+const createButtonWithIcon = (className, text, iconPath, url) => {
   const button = document.createElement('button');
   button.className = 'btn';
   const buttonText = document.createElement('a');
+  buttonText.href = url;
+  buttonText.target = '_blank';
   buttonText.className = className;
   buttonText.textContent = text;
   const icon = document.createElement('img');
@@ -300,12 +300,17 @@ const createModal = (project) => {
     'btn-live',
     'See live',
     './assets/see_live_icon.svg',
+    project.live,
   );
+  liveButtonDesktop.href = project.live;
   const sourceButtonDesktop = createButtonWithIcon(
     'btn-source',
     'See source',
     './assets/github_white.svg',
+    project.source,
   );
+  sourceButtonDesktop.href = project.live;
+
   buttonContainerDesktop.appendChild(liveButtonDesktop);
   buttonContainerDesktop.appendChild(sourceButtonDesktop);
   projectTitleWrapper.appendChild(projectTitle);
@@ -344,12 +349,16 @@ const createModal = (project) => {
     'btn-live',
     'See live',
     './assets/see_live_icon.svg',
+    project.live,
   );
+
   const sourceButton = createButtonWithIcon(
     'btn-source',
     'See source',
     './assets/github_white.svg',
+    project.source,
   );
+
   buttonContainer.appendChild(liveButton);
   buttonContainer.appendChild(sourceButton);
 
