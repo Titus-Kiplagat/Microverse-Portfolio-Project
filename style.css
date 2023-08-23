@@ -1092,8 +1092,6 @@ a:focus {
 
   .project-image {
     max-width: 54.5rem;
-
-    /* height: 38.5rem; */
     height: 100%;
     border-radius: 0.5rem;
     border: none;
